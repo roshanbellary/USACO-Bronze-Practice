@@ -1,3 +1,4 @@
+// implements the heap algorithm which gives all possible permutations
 import java.io.*;
 import java.util.*;
 public class Lineup {
