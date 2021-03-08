@@ -7,30 +7,30 @@ public class Path {
     public static void check(String a, String b){
         if (a.equals("N")){
             if (b.equals("E")){
-                turns++;
+                turns+=90;
             }else if (b.equals("W")){
-                turns--;
+                turns-=90;
             }
         }
         if (a.equals("S")){
             if (b.equals("W")){
-                turns++;
+                turns+=90;
             }else if (b.equals("E")){
-                turns--;
+                turns-=90;
             }
         }
         if (a.equals("E")){
             if (b.equals("N")){
-                turns++;
+                turns-=90;
             }else if (b.equals("S")){
-                turns--;
+                turns+=90;
             }
         }
         if (a.equals("W")){
             if (b.equals("S")){
-                turns++;
+                turns-=90;
             }else if (b.equals("N")){
-                turns--;
+                turns+=90;
             }
         }
     }
