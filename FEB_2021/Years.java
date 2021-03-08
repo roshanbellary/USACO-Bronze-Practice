@@ -77,11 +77,11 @@ public class Years {
                 ind_s=cows.size()-1;
             }
             if (direction>0){
-                e[ind_f].add(new Edge(ind_s, direction*(12+Math.abs(cows.get(ind_s).y-diff))));
-                e[ind_s].add(new Edge(ind_f, -direction*(12+Math.abs(cows.get(ind_s).y-diff)))); 
+                e[ind_f].add(new Edge(ind_s, -direction*(12-(cows.get(ind_s).y-diff))));
+                e[ind_s].add(new Edge(ind_f, direction*(12-(cows.get(ind_s).y-diff)))); 
             }else{
-                e[ind_f].add(new Edge(ind_s, direction*Math.abs(cows.get(ind_s).y-diff)));
-                e[ind_s].add(new Edge(ind_f, -direction*Math.abs(cows.get(ind_s).y-diff)));
+                e[ind_f].add(new Edge(ind_s, -direction*(12+cows.get(ind_s).y-diff)));
+                e[ind_s].add(new Edge(ind_f, direction*(12+cows.get(ind_s).y-diff)));
             }
         }
         int ind_b = -1;

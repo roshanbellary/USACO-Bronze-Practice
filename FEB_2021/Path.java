@@ -45,6 +45,7 @@ public class Path {
             for (int j=0;j<store.length()-1;j++){
                 Path.check(String.valueOf(store.charAt(j)),String.valueOf(store.charAt(j+1)));
             }
+            Path.check(String.valueOf(store.charAt(length-1)), String.valueOf(store.charAt(0)));
             if (turns>0){
                 results[i]=true;
             }else{
