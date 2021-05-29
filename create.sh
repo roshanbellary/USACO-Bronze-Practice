@@ -1,12 +1,12 @@
 for f in *; do
 	if [ -d "$f" ]; then
-		cd "./$f
+		cd "./$f"
 		cd "./java"
-		touch "README.md"
+		touch ".keep"
 		cd ..
 		cd "./c++"
-                touch "README.md"
-                cd ..
+		touch ".keep"
+		cd ..
 		cd ..
 	fi
 done
